@@ -1,8 +1,8 @@
 public class Hogwarts {
-    String firstName;
-    String lastName;
-    int powerOfMagic;
-    int transgressionDistance;
+    private String firstName;
+    private String lastName;
+    private int powerOfMagic;
+    private int transgressionDistance;
 
     private void validationPowerOfMagic() {
         if (powerOfMagic < 0) powerOfMagic = 0;
@@ -58,7 +58,7 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "Имя: " + firstName + ", фамилия:" + lastName + '\n' +
+        return "Имя: " + firstName + ", фамилия: " + lastName + '\n' +
                 "сила магии: " + powerOfMagic + ", дистанция трансгресии: " + transgressionDistance;
     }
 }
