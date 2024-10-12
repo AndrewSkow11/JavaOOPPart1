@@ -32,4 +32,27 @@ public class ComparisonStudents {
 
         }
     }
-}
+
+    /*
+    Реализуйте метод, который сравнивает двух любых учеников Хогвартса по силе магии и расстоянию трансгрессии,
+     и выводит в консоль сравнительную оценку между двумя учениками.
+     */
+
+    public void comparisonHogwarts (Hogwarts student1, Hogwarts student2) {
+        int resultStudent1 = student1.getPowerOfMagic() + student1.getTransgressionDistance();
+        int resultStudent2 = student2.getPowerOfMagic() + student2.getTransgressionDistance();
+
+        if (resultStudent1 > resultStudent2) {
+            System.out.println(student1.getFirstName() + " лучший студент Хогвартса, чем " + student2.getFirstName() + '.');
+        }
+        else if (resultStudent1 ==  resultStudent2) {
+            System.out.println(student1.getFirstName() + " такой же хороший студент Хогвартса, как " + student2.getFirstName() + '.');
+        }
+        else {
+            System.out.println(student2.getFirstName() + " лучший студент Хогвартса, чем " + student1.getFirstName() + '.');
+
+        }
+    }
+
+
+    }

@@ -18,6 +18,7 @@ public class Main {
         comparisonStudents.comparisonInFaculty(griffindorStudents[0], griffindorStudents[2]);
         comparisonStudents.comparisonInFaculty(griffindorStudents[1], griffindorStudents[2]);
 
+        comparisonStudents.comparisonHogwarts(griffindorStudents[0], griffindorStudents[1]);
 
 
     }
