@@ -1,9 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("About Hogwarts");
-        Hogwarts people1 = new Hogwarts("firstName",
-                "lastName", 56, 30);
-        System.out.println(people1);
+
 
         Griffindor [] griffindorStudents  =  {
                 new Griffindor("Гарри", "Поттер", -89, 92, 89, -7, 90),
@@ -15,6 +12,13 @@ public class Main {
         for (Griffindor griffindorStudent : griffindorStudents) {
             System.out.println(griffindorStudent);
         }
+
+        ComparisonStudents comparisonStudents = new ComparisonStudents();
+        comparisonStudents.comparisonInFaculty(griffindorStudents[0], griffindorStudents[1]);
+        comparisonStudents.comparisonInFaculty(griffindorStudents[0], griffindorStudents[2]);
+        comparisonStudents.comparisonInFaculty(griffindorStudents[1], griffindorStudents[2]);
+
+
 
     }
 

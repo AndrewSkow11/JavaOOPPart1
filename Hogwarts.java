@@ -61,4 +61,8 @@ public class Hogwarts {
         return "Имя: " + firstName + ", фамилия: " + lastName + '\n' +
                 "сила магии: " + powerOfMagic + ", дистанция трансгресии: " + transgressionDistance;
     }
+
+
+
+
 }

@@ -29,4 +29,28 @@ public class Griffindor extends Hogwarts {
     public String toString() {
         return super.toString() + "\nблагородство: " + nobility + ", честь: " + honor + ", храбрость: " + courage;
     }
+
+    public int getNobility() {
+        return nobility;
+    }
+
+    public void setNobility(int nobility) {
+        this.nobility = nobility;
+    }
+
+    public int getHonor() {
+        return honor;
+    }
+
+    public void setHonor(int honor) {
+        this.honor = honor;
+    }
+
+    public int getCourage() {
+        return courage;
+    }
+
+    public void setCourage(int courage) {
+        this.courage = courage;
+    }
 }
