@@ -4,13 +4,53 @@
 // ambition,
 // resourcefulness
 // and a thirst for power.
-public class Slytherin  extends Hogwarts{
+public class Slytherin extends Hogwarts {
 
     private int characterizedByCunning;
     private int determination;
     private int ambition;
     private int resourcefulness;
     private int thirstForPower;
+
+    public int getCharacterizedByCunning() {
+        return characterizedByCunning;
+    }
+
+    public void setCharacterizedByCunning(int characterizedByCunning) {
+        this.characterizedByCunning = characterizedByCunning;
+    }
+
+    public int getDetermination() {
+        return determination;
+    }
+
+    public void setDetermination(int determination) {
+        this.determination = determination;
+    }
+
+    public int getAmbition() {
+        return ambition;
+    }
+
+    public void setAmbition(int ambition) {
+        this.ambition = ambition;
+    }
+
+    public int getResourcefulness() {
+        return resourcefulness;
+    }
+
+    public void setResourcefulness(int resourcefulness) {
+        this.resourcefulness = resourcefulness;
+    }
+
+    public int getThirstForPower() {
+        return thirstForPower;
+    }
+
+    public void setThirstForPower(int thirstForPower) {
+        this.thirstForPower = thirstForPower;
+    }
 
     public Slytherin(String firstName, String lastName, int powerOfMagic, int transgressionDistance, int characterizedByCunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
         super(firstName, lastName, powerOfMagic, transgressionDistance);
@@ -36,5 +76,16 @@ public class Slytherin  extends Hogwarts{
         this.ambition = ambition;
         this.resourcefulness = resourcefulness;
         this.thirstForPower = thirstForPower;
+
+
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nхитрость: " + getCharacterizedByCunning() +
+                ", решительность: " + getDetermination() + ", амбицтозность: " + getAmbition() +
+                ", находчивость: " + getResourcefulness() + ", жажда власти: " + getThirstForPower();
+
+
     }
 }
